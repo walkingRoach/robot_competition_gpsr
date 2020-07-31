@@ -1,0 +1,60 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar gpsr;
+
+!slot <take>;
+!slot <aobject>;
+
+!slot <me>;
+!slot <vbdeliver>;
+
+!slot <pname>;
+!slot <vbspeak>;
+!slot <vbfollow>;
+!slot <room>;
+
+!start <complex>;
+<complex>:<mission1>|<mission2>|<mission3>|<mission4>|<mission5>;
+
+<mission1>:<getobj> and <deliver>;
+<mission2>:<goroom> and <findobj>;
+<mission3>:<goroom> <findprs> and (<talk>|<follow>);
+<mission4>:(<findprsat>|<findclprsat>) and (<talk>|<follow>);
+<mission5>:(name <pname>)|(go <placement>)|(take <aobject>)|(reach <room>);
+
+<getobj>:<take> the <aobject> from the <placement>;
+<take>:take|grasp|get;
+<aobject>:bathCream|milkTea|napkin|oreo|pepsi|chips|green|herbal|porridge|biscuits;
+
+<deliver>:<vbdeliver> it to <target>;
+<vbdeliver>:bring|carry|deliver|take;
+<target>:(<me>)|(<pname><wherein><room>)|(the <placement>);
+
+<me>:me;
+<pname>:Daniel|Rose|Michael|John|Jack|Mary|Fisher|Adam|Kevin|Tom;
+<room>:kitchen|livingroom|bedroom|hallway;
+<wherein>:(in the)|(at the)|(which is in the);
+<placement>:(kitchen table)|(kitchen counter)|bar|(right bedside table)|desk|shelf;
+
+<goroom>:<vbgoto> the <room>;
+<vbgoto>:(go to)|(navigate to)|(reach)|(get into);
+
+<findobj>:<vbfind> a <aobject>;
+<vbfind>:find|(look for);
+
+<findprs>:<vbfind> a person;
+
+<talk>:<tell>;
+<tell>:<vbspeak>(<time>|<date>|<qname>|<question>);
+<qname>:(your name)|(the name of your team);
+<vbspeak>:tell|say|speak|answer;
+<time>:(the time)|(what time is it);
+<date>:(the date)|(what day is (today|tomorrow))|(the day of the (month|week));
+<question>:a question;
+
+<follow>:(<vbfollow> her)|(<vbfollow> her to the <room>);
+<vbfollow>:follow;
+
+<findprsat>:<vbfind> a person in the <room>;
+<findclprsat>:<vbfind> the calling person in the <room>;
+
+<stop>:stop follow;

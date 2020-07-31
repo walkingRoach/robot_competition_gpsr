@@ -1,0 +1,156 @@
+<aiml version="1.0" encoding="UTF-8">
+    <category>
+        <pattern>from * take * to me</pattern>
+        <template>
+            I will take <star index="2" /> from <star index="1" /> to you
+        </template>
+    </category>
+
+    <category>
+        <pattern>from * get * to * which in the *</pattern>
+        <template>
+            I will take <star index="2" /> from <star index="1" /> and deliver it to <star index="3" /> which in the <star index="4" />
+        </template>
+    </category>
+
+    <category>
+        <pattern>from * bring * to *</pattern>
+        <template>
+            I will bring <star index="2" /> from <star index="1" /> and deliver it to <star index="3" />
+        </template>
+    </category>
+
+    <category>
+        <pattern>from * find *</pattern>
+        <template>
+            I will go to <star index="1" /> and find <star index="2" />
+        </template>
+    </category>
+
+    <category>
+        <pattern>from * look for a person tell *</pattern>
+        <template>
+            I will go to <star index="1" />, look for a person and tell <star index="2" />
+        </template>
+    </category>
+
+    <category>
+        <pattern>from * look for a person ask *</pattern>
+        <template>
+            I will go to <star index="1" />, look for a person and ask <star index="2" />
+        </template>
+    </category>
+
+    <category>
+        <pattern>from * look for a person and follow her</pattern>
+        <template>
+            I will go to <star index="1" />, look for a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>your name</pattern>
+        <template>
+            My name is Zhejiang University of Technology Service Robot
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell name of your team</pattern>
+        <template>
+            my team name is Zhejiang University of Technology Service Robot team
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell today</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date today</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell tomorrow</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date tomorrow</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell month</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date month</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell week</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date week</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell date</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date date</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>the time</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py time today</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>what time is it</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py time today</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>the date</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date date</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>what day is today</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py time today</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>what day is tomorrow</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py time tomorrow</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>the day of the month</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date month</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>the day of the week</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date week</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell thank</pattern>
+        <template>
+            thank you I get it
+        </template>
+    </category>
+
+</aiml>

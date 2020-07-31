@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find robot)/launch/D435.launch" />
+
+    <!--&lt;!&ndash; Console launch prefix &ndash;&gt;-->
+    <!--<arg name="launch_prefix" default=""/>-->
+
+    <!--<arg name="yolo_weights_path"          default="$(find darknet_ros2)/model"/>-->
+    <!--<arg name="yolo_config_path"           default="$(find darknet_ros2)/cfg"/>-->
+
+    <!--&lt;!&ndash; Load parameters &ndash;&gt;-->
+    <!--<rosparam command="load" ns="darknet_ros2" file="$(find darknet_ros2)/params/ros.yaml"/>-->
+    <!--<rosparam command="load" ns="darknet_ros2" file="$(find darknet_ros2)/params/yolov3-tiny-home.yaml"/>-->
+
+    <!--&lt;!&ndash; Start darknet and ros wrapper &ndash;&gt;-->
+    <!--<node pkg="darknet_ros2" type="darknet_ros2" name="darknet_ros2" output="screen" launch-prefix="$(arg launch_prefix)">-->
+        <!--<param name="weights_path"          value="$(arg yolo_weights_path)" />-->
+        <!--<param name="config_path"           value="$(arg yolo_config_path)" />-->
+    <!--</node>-->
+
+
+    <arg name="database" default="$(find robot)/datasets/" />
+    <arg name="model_path" default="$(find robot)/models/facenet/20180402-114759/20180402-114759.pb" />
+    <node pkg="robot" type="test_perception_node.py" name="test_perception_node" output="screen">
+        <param name="model_path" value="$(arg model_path)" />
+        <param name="database" value="$(arg database)" />
+        <param name="subscribe_image_topic" value="/darknet_ros/detection_image" />
+        <param name="subscribe_bounding_boxes_topic" value="/darknet_ros/bounding_boxes" />
+        <param name="action_detection_topic" value="/darknet_ros/check_for_objects" />
+    </node>
+
+    <!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_ros)/config/D435.rviz" required="true" />-->
+</launch>

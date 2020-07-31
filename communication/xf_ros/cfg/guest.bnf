@@ -1,0 +1,13 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar guest;
+!slot <hello>;
+!slot <mine>;
+!slot <guestname>;
+
+!start <gueststart>;
+<gueststart>:[<hello>]<name>;
+<hello>:hello|morning|evening;
+<name>:<mine><guestname>;
+<mine>:my;
+//<mine>:my name is ;
+<guestname>:lennon;

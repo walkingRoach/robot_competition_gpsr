@@ -1,0 +1,12 @@
+publishers:
+  asr:
+    topic: /xf_ros/asr_msg
+    queue_size: 3
+    latch: false
+
+actions:
+  home_asr:
+    name: /xf_asr/home_recognize
+  tts:
+    name: /xf_tts/tts_generate
+

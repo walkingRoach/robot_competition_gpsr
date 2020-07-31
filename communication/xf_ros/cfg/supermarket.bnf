@@ -1,0 +1,15 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar supermarket;
+
+!slot <room>;
+!slot <aobject>;
+
+!start <complex>;
+
+<complex>:<mission1>|<mission2>;
+
+<mission1>:这是<room>上面有<aobject>;
+<room>:货架一｜货架二｜货架三;
+<aobject>:苹果|梨子|柠檬;
+
+<mission2>:去<room>拿<aobject>

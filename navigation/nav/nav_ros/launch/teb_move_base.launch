@@ -1,0 +1,13 @@
+<launch>
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+    <rosparam file="$(find nav_ros)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find nav_ros)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find nav_ros)/param/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find nav_ros)/param/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find nav_ros)/param/base_global_planner_param.yaml" command="load" />
+
+    <rosparam file="$(find nav_ros)/param/teb_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find nav_ros)/param/move_base_params.yaml" command="load" />
+  </node>
+  
+</launch>

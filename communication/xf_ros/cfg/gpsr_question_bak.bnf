@@ -1,0 +1,38 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar gpsrmission;
+
+!start <mission>;
+
+<mission>:<missiongroup1>|<mission8>|<mission9>|<mission10>|<mission12  >|<mission13>;
+
+<missiongroup1>:<mission1>|<mission2>|<mission3>|<mission4>|<mission6>|<mission7>|<mission24>|<mission25>|<mission26>|<mission27>|<mission28>|<mission12>|<mission13>|<mission14>|<mission15>|<mission16>;
+
+<mission1>:Which German Count invented the zeppelin;
+<mission2>:Who was the first president of the USA;
+<mission3>:In ancient China what meat was reserved for the Emperor;
+<mission4>:In which city was the Titanic built;
+<mission5>:How many children did Queen Victoria have;
+<mission6>:Which French king was called the Sun King;
+<mission7>:What was in England the northern frontier of the Roman Empire;
+<mission8>:In which film was the spaceship called Nostromo;
+<mission9>:Who was the first king of Belgium;
+<mission10>:What was the former name of New York;
+<mission11>:What was the Latin name of Paris in Roman times;
+<mission12>:Which city was the capital of Australia from;
+<mission13>:Give another name for the study of fossils;
+<mission14>:What do dragonflies prefer to eat;
+<mission15>:Which insects cannot fly, but can jump higher than;
+<mission16>:What is the name of the European Bison;
+<mission17>:What is called a fish with a snake-like body;
+<mission18>:Which plant does the Canadian flag contain;
+<mission19>:Which is the largest species of the tige;
+<mission20>:What is the lightest existing metal;
+<mission21>:What are the three primary colors;
+<mission22>:Which planet is nearest the sun;
+<mission23>:How long is the Great Wall of China;
+<mission24>:What is the largest number of five digits;
+<mission25>:What is the most fractured human bone;
+<mission26>:Which South American country is named after Venice;
+<mission27>:How many stars feature on the flag of New Zealand;
+<mission28>:What colour to do you get when you mix red and white;
+

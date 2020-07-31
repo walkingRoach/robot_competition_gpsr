@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+    <!--<发送消息arm_height，单位毫米,机械臂自动完成抓取>-->
+    <!--<发送消息arm_target，xyz坐标，单位毫米，机械臂运动至该坐标>-->
+    <!--<发送消息arm_target，x=-2时，机械臂爪子夹紧>-->
+    <!--<发送消息arm_target，x=-3时，机械臂爪子松开>-->
+    <!--<发送消息arm_target，x=-4时，机械臂复位>-->
+    <node pkg="kw_arm" type="FixedMotion" name="arm_controller" output="screen" >
+        <param name="SerialPort"  type="string" value="/dev/kw_arm"/>
+        <!--<初始位置，遵循右手坐标系，x轴正方向朝前>-->
+        <param name="InitX"  type="int" value="200"/>
+        <param name="InitY"  type="int" value="0"/>
+        <param name="InitZ"  type="int" value="100"/>
+        <param name="InitPitch"  type="int" value="0"/>
+        <!--<固定动作抓取时，机械臂第一步前伸的距离>-->
+        <param name="ForwardDistance"  type="int" value="300"/>
+        <!--<抓取时，减少的距离>-->
+        <param name="GripDistance"  type="int" value="30"/>
+    </node>
+</launch>

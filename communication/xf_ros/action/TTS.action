@@ -1,0 +1,9 @@
+# Goal definition
+std_msgs/String tts_str
+
+---
+# Result definition
+std_msgs/String audio_path
+
+---
+# Feedback definition

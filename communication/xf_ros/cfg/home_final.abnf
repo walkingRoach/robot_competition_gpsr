@@ -1,0 +1,21 @@
+#ABNF 1.0 UTF-8;
+language en-us;
+mode voice;
+
+root $main;
+
+$main = $mission0$mission1;
+
+$mission0 = $intro$guestname;
+$intro = name;
+$guestname =
+Jack |
+Kevin |
+Tom;
+
+$mission1 = $take$item;
+$take = take;
+$item =
+milk |
+water |
+chips;

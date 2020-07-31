@@ -1,0 +1,33 @@
+yolo_model:
+
+  config_file:
+    name: yolov3-homev1.cfg
+  weight_file:
+    name: yolov3-homev1.weights
+  threshold:
+    value: 0.4
+  detection_classes:
+    names:
+      - people
+      - water
+      - milk
+      - milkTea
+      - cola
+      - energyDrinks
+      - lactobacillusBeverage
+      - sprite
+      - mizone
+      - fanta
+      - yiliYogurt
+      - ADCalciumMilk
+      - minuteMaidOrangeJuice
+      - wangLaoJi
+      - jiaDuoBao
+      - blackTea
+      - masterKongGreenTea
+      - unifiedSugarSydney
+      - teaPai
+      - nutritionExpress
+      - huiyuanOrangeJuice
+      - coffee
+      - coconutJuice

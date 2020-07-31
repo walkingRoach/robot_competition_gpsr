@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+
+    <node pkg="robot" type="test_capture.py" name="test_capture" output="screen">
+
+    </node>
+</launch>

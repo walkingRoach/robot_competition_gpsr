@@ -1,0 +1,19 @@
+<launch>
+  <arg name="depth_camera_info" value="/camera/aligned_depth_to_color/camera_info"/>
+  <arg name="depth_image_rect" value="/camera/aligned_depth_to_color/image_raw"/>
+  <arg name="out_cloud" value="/camera/depth_registered/points"/>
+
+  <node pkg="nodelet" type="nodelet" name="standalone_nodelet" args="manager" output="screen"/>
+
+  <!--&lt;!&ndash; Convert depth from mm (in uint16) to meters &ndash;&gt;-->
+  <!--<node pkg="nodelet" type="nodelet" name="convert_metric" args="load depth_image_proc/convert_metric standalone_nodelet">-->
+  <!--<remap from="image_raw" to="$(arg depReg_imgraw)"/>-->
+  <!--<remap from="image" to="$(arg depReg_imgrect)"/>-->
+  <!--</node>-->
+
+  <node pkg="nodelet" type="nodelet" name="points_xyz" args="load depth_image_proc/point_cloud_xyz standalone_nodelet --no-bond">
+    <remap from="camera_info" to="$(arg depth_camera_info)" />
+    <remap from="image_rect" to="$(arg depth_image_rect)"/>
+    <remap from="points" to="$(arg out_cloud)"/>
+  </node>
+</launch>

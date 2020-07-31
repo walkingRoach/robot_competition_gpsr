@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <rosparam file="$(find nav_ros)/param/ros.yaml"/>
+
+    <arg name="model" default="$(find xacro)/xacro --inorder '$(find nav_ros)/urdf/mrobot_with_d435.urdf.xacro'" />
+    <param name="robot_description" command="$(arg model)" />
+
+    <node name="MapServer" pkg="map_server" type="map_server" output="screen" args="$(find nav_ros)/maps/map_20180813_final.yaml"/>
+
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+        <rosparam file="$(find nav_ros)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find nav_ros)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find nav_ros)/param/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find nav_ros)/param/global_costmap_params.yaml" command="load" />
+        <rosparam file="$(find nav_ros)/param/base_global_planner_param.yaml" command="load" />
+
+        <rosparam file="$(find nav_ros)/param/teb_local_planner_params.yaml" command="load" />
+        <rosparam file="$(find nav_ros)/param/move_base_params.yaml" command="load" />
+    </node>
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <node pkg="robot" type="save_pos_node.py" name="save_pos_node" output="screen">
+        <param name="save_path" value="/home/ubuntu/Desktop/pose.txt"/>
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="map_to_base_footprint" args="0.0 0.0 0.0 0 0 0.0 /map /base_footprint 100"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_ros)/config/config.rviz" required="true"/>
+</launch>

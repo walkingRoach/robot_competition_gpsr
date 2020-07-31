@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <include file="$(find xf_ros)/launch/tts.launch" />
+    <include file="$(find xf_ros)/launch/asr_gpsr.launch" />
+
+    <node pkg="robot" type="test_communication_node.py" name="test_communication" output="screen">
+        <param name="listen_action_topic" value="/xf_asr/home_recognize" />
+        <param name="speak_pub_topic" value="/xf/tts/words" />
+        <param name="play_command" value="aplay" />
+        <param name="speed_play" value="1.2" />
+        <param name="test_type" value="cloud" />
+    </node>
+</launch>

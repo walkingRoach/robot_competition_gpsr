@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<launch>
+    <include file="$(find xf_ros)/launch/tts.launch" />
+    <include file="$(find xf_ros)/launch/asr.launch" />
+
+    <arg name="database" default="$(find robot)/datasets/" />
+    <arg name="model_path" default="$(find robot)/models/facenet/20180402-114759/20180402-114759.pb" />
+    <node pkg="robot" type="robot_sm.py" name="robot_sm" output="screen">
+        <param name="model_path" value="$(arg model_path)" />
+        <param name="database" value="$(arg database)" />
+    </node>
+
+</launch>

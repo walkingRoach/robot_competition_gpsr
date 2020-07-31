@@ -1,0 +1,262 @@
+<aiml version="1.0" encoding="UTF-8">
+    <category>
+        <pattern>Which German Count invented the zeppelin</pattern>
+        <template>
+            Count von Zeppelin
+        </template>
+    </category>
+
+    <category>
+        <pattern>Who was the first president of the USA</pattern>
+        <template>
+            George Washington
+        </template>
+    </category>
+
+    <category>
+        <pattern>In ancient China what meat was reserved for the Emperor</pattern>
+        <template>
+            Pork
+        </template>
+    </category>
+
+    <category>
+        <pattern>In which city was the Titanic built</pattern>
+        <template>
+            Belfast
+        </template>
+    </category>
+
+    <category>
+        <pattern>How many children did Queen Victoria have</pattern>
+        <template>
+            Nine children
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which French king was called the Sun King</pattern>
+        <template>
+            Louis XIV
+        </template>
+    </category>
+
+    <category>
+        <pattern>What was in England the northern frontier of the Roman Empire</pattern>
+        <template>
+            Hadrians wall
+        </template>
+    </category>
+
+    <category>
+        <pattern>In which 1979 film was the spaceship called Nostromo</pattern>
+        <template>
+            Alien
+        </template>
+    </category>
+
+    <category>
+        <pattern>Who was the first king of Belgium</pattern>
+        <template>
+            Leopold I
+        </template>
+    </category>
+
+    <category>
+        <pattern>What was the former name of New York</pattern>
+        <template>
+            New Amsterdam
+        </template>
+    </category>
+
+    <category>
+        <pattern>What was the Latin name of Paris in Roman times</pattern>
+        <template>
+            Lutetia
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which city was the capital of Australia from 1901 to 1927</pattern>
+        <template>
+            Melbourne
+        </template>
+    </category>
+
+    <category>
+        <pattern>Give another name for the study of fossils</pattern>
+        <template>
+            Paleontology
+        </template>
+    </category>
+
+    <category>
+        <pattern>What do dragonflies prefer to eat</pattern>
+        <template>
+            Mosquitoes
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which insects cannot fly, but can jump higher than 30 centimeters</pattern>
+        <template>
+            Fleas
+        </template>
+    </category>
+
+    <category>
+        <pattern>What is the name of the European Bison</pattern>
+        <template>
+            Wisent
+        </template>
+    </category>
+
+    <category>
+        <pattern>What is called a fish with a snake-like body</pattern>
+        <template>
+            Eel fish
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which plant does the Canadian flag contain</pattern>
+        <template>
+            Maple
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which is the largest species of the tiger</pattern>
+        <template>
+            Siberian tiger
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which malformation did Marilyn Monroe have when she was born</pattern>
+        <template>
+            Six toes
+        </template>
+    </category>
+
+    <category>
+        <pattern>What is the house number of the Simpsons</pattern>
+        <template>
+            Number 742
+        </template>
+    </category>
+
+    <category>
+        <pattern>What dog in ancient China was restricted to the aristocracy</pattern>
+        <template>
+            Pekinese
+        </template>
+    </category>
+
+    <category>
+        <pattern>Who is the director of Reservoir Dogs</pattern>
+        <template>
+            Quentin Tarantino
+        </template>
+    </category>
+
+    <category>
+        <pattern>What number is on Herbie the beatle</pattern>
+        <template>
+            Fifty-three
+        </template>
+    </category>
+
+    <category>
+        <pattern>Give the name of the best James Bond parody</pattern>
+        <template>
+            Austin Powers
+        </template>
+    </category>
+
+    <category>
+        <pattern>Two brothers invented the hot air balloon. What was their surname</pattern>
+        <template>
+            Montgolfier
+        </template>
+    </category>
+
+    <category>
+        <pattern>Who was the inventor of the steam engine</pattern>
+        <template>
+            James Watt
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which device was invented by Henry Mill</pattern>
+        <template>
+            The typewriter
+        </template>
+    </category>
+
+    <category>
+        <pattern>What is the lightest existing metal</pattern>
+        <template>
+            Aluminium
+        </template>
+    </category>
+
+    <category>
+        <pattern>What are the three primary colors</pattern>
+        <template>
+            Blue, yellow and red
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which planet is nearest the sun</pattern>
+        <template>
+            Mercury
+        </template>
+    </category>
+
+    <category>
+        <pattern>How long is the Great Wall of China</pattern>
+        <template>
+            6259 kilometers
+        </template>
+    </category>
+
+    <category>
+        <pattern>What is the largest number of five digits</pattern>
+        <template>
+            99999
+        </template>
+    </category>
+
+    <category>
+        <pattern>What is the most fractured human bone</pattern>
+        <template>
+            Clavicle
+        </template>
+    </category>
+
+    <category>
+        <pattern>Which South American country is named after Venice</pattern>
+        <template>
+            Venezuela
+        </template>
+    </category>
+
+    <category>
+        <pattern>How many stars feature on the flag of New Zealand</pattern>
+        <template>
+            Four stars
+        </template>
+    </category>
+
+    <category>
+        <pattern>What colour to do you get when you mix red and white</pattern>
+        <template>
+            Pink
+        </template>
+    </category>
+
+
+</aiml>

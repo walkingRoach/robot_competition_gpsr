@@ -1,0 +1,54 @@
+### TF frames #############################################
+laser_frame: scan
+robot_frame: base_link
+offset_frame: offset
+odometry_frame: odom
+map_frame: map
+
+### ROS topics ############################################
+map_topic: map
+laser_topic: /scan
+
+### ROS services ##########################################
+map_service: static_map
+
+
+### YOLO part ##########################################
+subscribers:
+  camera_reading:
+    # topic: /usb_cam/image_raw
+    topic: /camera/color/image_raw
+    queue_size: 1
+  depth_reading:
+    topic: /camera/depth/image_rect_raw
+    queue_size: 1
+
+actions:
+  camera_reading:
+    name: /darknet_ros2/check_for_objects
+  home_asr:
+    name: /xf_asr/home_recognize
+  delay_time: 15
+
+publishers:
+  object_detector:
+    topic: /darknet_ros2/found_object
+    queue_size: 1
+    latch: false
+
+  bounding_boxes:
+    topic: /darknet_ros2/bounding_boxes
+    queue_size: 1
+    latch: false
+
+  detection_image:
+    topic: /darknet_ros2/detection_image
+    queue_size: 1
+    latch: true
+
+test_model: true
+yolo_always_detect: false
+image_view:
+  enable_opencv: false
+  wait_key_delay: 3
+  enable_console_output: true

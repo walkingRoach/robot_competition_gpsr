@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+<node name="usb_cam" pkg="usb_cam" type="usb_cam_node" output="screen" >
+    <param name="video_device" value="/dev/video0" />
+    <param name="image_width" value="640" />
+    <param name="image_height" value="480" />
+    <param name="pixel_format" value="yuyv" />
+    <param name="camera_frame_id" value="usb_cam" />
+    <param name="io_method" value="mmap"/>
+  </node>
+
+   <!-- Console launch prefix -->
+    <arg name="launch_prefix" default=""/>
+
+    <!-- Config and weights folder. -->
+    <arg name="yolo_weights_path" default="$(find darknet_ros)/yolo_network_config/weights"/>
+    <arg name="yolo_config_path" default="$(find darknet_ros)/yolo_network_config/cfg"/>
+
+    <!-- Load parameters -->
+    <rosparam command="load" ns="darknet_ros" file="$(find darknet_ros)/config/ros.yaml"/>
+    <rosparam command="load" ns="darknet_ros" file="$(find darknet_ros)/config/yolov3.yaml"/>
+    <!--<rosparam command="load" ns="darknet_ros2" file="$(find darknet_ros2)/config/yolov2-tiny.yaml"/>-->
+    <!--<rosparam command="load" ns="darknet_ros2" file="$(find darknet_ros2)/config/yolov2.yaml"/>-->
+
+    <!-- Start darknet and ros wrapper -->
+    <node pkg="darknet_ros" type="darknet_ros" name="darknet_ros" output="screen" launch-prefix="$(arg launch_prefix)">
+        <param name="weights_path"          value="$(arg yolo_weights_path)" />
+        <param name="config_path"           value="$(arg yolo_config_path)" />
+    </node>
+
+  <!--<node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">-->
+    <!--<remap from="image" to="/usb_cam/image_raw"/>-->
+    <!--<param name="autosize" value="true" />-->
+  <!--</node>-->
+
+    <node pkg="facenet_ros" type="facenet_home_node.py" name="facenet_home_node" output="screen">
+        <param name="model_path" value="/home/ubuntu/zhulao_ws/models/facenet/20180402-114759/20180402-114759.pb" />
+        <param name="database" value="/home/ubuntu/zhulao_ws/datasets/" />-->
+        <param name="subscribe_image_topic" value="/darknet_ros/detection_image" />
+        <param name="subscribe_bounding_boxes_topic" value="/darknet_ros/bounding_boxes" />
+        <param name="action_detection_topic" value="/darknet_ros/check_for_objects" />
+    </node>
+</launch>

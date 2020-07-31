@@ -1,0 +1,21 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar mission;
+
+!slot <intro>;
+!slot <guestname>;
+
+!slot <take>;
+!slot <item>;
+
+!start <missionstart>;
+<missionstart>:<task1>;
+
+<task1>:<mission0><mission1>;
+
+
+<mission0>:<intro><guestname>;
+<intro>:name;
+<guestname>:Daniel|Rose|Michael|John|Jack|Mary|Fisher|Adam|Kevin|Tom;
+
+<mission1>:<item>;
+<item>:milk|water|chips|porridge|safeguard|napkin|sprite|laogangma|cola|icetea;

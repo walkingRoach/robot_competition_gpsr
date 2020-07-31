@@ -1,0 +1,55 @@
+<launch>
+    <rosparam file="$(find nav_ros)/param/ros.yaml"/>
+
+    <!--<node name="MapServer" pkg="map_server" type="map_server" output="screen" args="$(find nav_ros)/maps/map_20180813_final.yaml"/>-->
+
+    <!--<param name="/use_sim_time" value="false" />-->
+    <arg name="model" default="$(find xacro)/xacro --inorder '$(find nav_ros)/urdf/mrobot_with_d435.urdf.xacro'" />
+    <!--<arg name="gui" default="true" />-->
+
+    <param name="robot_description" command="$(arg model)" />
+
+    <param name="use_sim_time" value="false" />
+
+    <node name="MapServer" pkg="map_server" type="map_server" output="screen" args="$(find nav_ros)/maps/map_20180813_final.yaml"/>
+
+
+    <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen" clear_params="true">
+        <rosparam file="$(find nav_ros)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
+        <rosparam file="$(find nav_ros)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
+        <rosparam file="$(find nav_ros)/param/local_costmap_params.yaml" command="load" />
+        <rosparam file="$(find nav_ros)/param/global_costmap_params.yaml" command="load" />
+        <rosparam file="$(find nav_ros)/param/base_global_planner_param.yaml" command="load" />
+
+        <rosparam file="$(find nav_ros)/param/teb_local_planner_params.yaml" command="load" />
+        <rosparam file="$(find nav_ros)/param/move_base_params.yaml" command="load" />
+    </node>
+
+    <include file="$(find nav_ros)/launch/amcl_diff.launch" />
+    <!--<include file="$(find motor_control_3dx)/launch/start_auto.launch" />-->
+    <!--<include file="$(find ydlidar)/launch/x4.launch" />-->
+    <node pkg="fake_localization" type="fake_localization" name="fake_localization" clear_params="true" output="screen">
+        <remap from="base_pose_ground_truth" to="odom" />
+        <param name="global_frame_id" value="map" />
+        <param name="base_frame_id" value="base_footprint" />
+    </node>
+    <node pkg="tf" type="static_transform_publisher" name="map_to_base_link" args="0.0 0.0 0.1 0 0 0.0 /map /base_footprint 10"/>
+
+    <!--<node name="nav_ros" pkg="nav_ros" type="keyboard_teleop.py" output="screen">-->
+    <!--<param name="scale_linear" value="0.1" type="double"/>-->
+    <!--<param name="scale_angular" value="0.4" type="double"/>-->
+    <!--</node>-->
+
+    <!--<node pkg="arbotix_python" type="arbotix_driver" name="arbotix" output="screen" >-->
+    <!--<rosparam file="$(find nav_ros)/param/arbotix.yaml" command="load" />-->
+    <!--<param name="sim" value="true" />-->
+    <!--</node>-->
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_ros)/config/config.rviz" required="true" />
+</launch>

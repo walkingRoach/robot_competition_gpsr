@@ -1,0 +1,28 @@
+#ABNF 1.0 GB2312;
+
+/*
+ * Copyright 1999-2008 iFLYTEK.
+ * All Rights Reserved.
+ *
+ *  continuous digits grammar: 1-16 bit number
+ *  fully continuous digits grammar ²ŠŽò1-16 bit number
+ */
+
+language zh-CN;
+mode voice;
+
+root $main;
+
+$main = $phone_number;
+$phone_number = $digit<1-16>;
+$digit =
+  Ò»
+| ¶þ
+| Èý
+| ËÄ
+| Îå
+| Áù
+| Æß
+| °Ë
+| ŸÅ
+| Áã;

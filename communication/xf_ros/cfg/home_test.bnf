@@ -1,0 +1,67 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar mission;
+
+/*
+!slot <intro>;
+!slot <guestname>;
+
+!slot <take>;
+!slot <item>;
+
+!slot <yes>;
+!slot <no>;
+
+!start <missionstart>;
+<missionstart>:<task1>|<task2>;
+
+<task1>:<mission0><mission1>;
+<task2>:<mission2>;
+
+
+<mission0>:<intro><guestname>;
+<intro>:我是|我的名字是|请叫我;
+<guestname>:拉文|丹尼尔|迈克尔|杰克|费希尔|凯文|露丝|约翰|玛丽|亚当;
+
+
+<mission1>:<take><item>;
+<take>:请帮我拿|帮我拿|给我拿|去拿|我要|给我拿|我需要|我想要;
+<item>:芬达|薯片|可乐|冰红茶|矿泉水|雪碧|王老吉;
+
+
+<mission2>:<yes>|<no>;
+<yes>:是|对|是的;
+<no>:不对|错|不是的;
+*/
+
+
+!slot <intro>;
+!slot <guestname>;
+
+!slot <take>;
+!slot <item>;
+
+!start <missionstart>;
+<missionstart>:<task1>;
+
+<task1>:<mission0><mission1>;
+
+
+<mission0>:<intro><guestname>;
+<intro>:我是|我的名字是|请叫我;
+<guestname>:拉文|丹尼尔|迈克尔|杰克|费希尔|凯文|露丝|约翰|玛丽|亚当;
+
+
+<mission1>:<take><item>;
+<take>:请帮我拿|帮我拿|给我拿|去拿|我要|给我拿|我需要|我想要;
+<item>:芬达|薯片|可乐|冰红茶|矿泉水|雪碧|王老吉;
+
+
+/*
+注:
+    1)变量名称不能超过15字符
+    2)编号!id和结束符号;前不可是标点']'等,可用括号
+
+
+可能的任务:
+My name is xxx, take item.
+*/

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <rosparam command="load" ns="xf_ros" file="$(find xf_ros)/cfg/xf.yaml"/>
+
+    <!--NOTES: asr_res_path must start with fo|-->
+    <arg name="asr_res_path" default="fo|$(find xf_ros)/res/asr/common.jet" />
+    <arg name="grm_build_path" default="$(find xf_ros)/res/asr/GrmBuild" />
+    <!-- <arg name="grm_file_path" default="$(find xf_ros)/cfg/guest.bnf" /> -->
+    <!--<arg name="grm_file_path" default="$(find xf_ros)/cfg/home.bnf" />-->
+    <!-- <arg name="grm_file_path" default="$(find xf_ros)/cfg/home_test.bnf" /> -->
+    <arg name="grm_file_path" default="$(find xf_ros)/cfg/home_final.bnf" />
+    <!--<arg name="grm_file_path" default="$(find xf_ros)/cfg/home.bnf" />-->
+    <!-- <arg name="grm_file_path" default="$(find xf_ros)/cfg/home_generated_confirmed.bnf" /> -->
+    <arg name="audio_file_path" default="$(find xf_ros)/audio/ddhgdw.pcm" />
+
+    <node pkg="xf_ros" type="asr_node" name="asr_node" output="screen">
+        <param name="asr_res_path" value="$(arg asr_res_path)" />
+        <param name="grm_build_path" value="$(arg grm_build_path)" />
+        <param name="grm_file_path" value="$(arg grm_file_path)" />
+        <param name="audio_file_path" value="$(arg audio_file_path)" />
+        <param name="login_param" value="appid=5d4a725b" />
+        <param name="asr_continue_minutes" value="10" />
+    </node>
+</launch>

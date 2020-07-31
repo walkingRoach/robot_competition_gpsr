@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<robot name="mrobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find nav_ros)/urdf/my_robot.urdf.xacro" />
+    <xacro:include filename="$(find nav_ros)/urdf/_d435.urdf.xacro" />
+
+    <mrobot_body/>
+    <sensor_d435 parent="standoff_2in_9_link">
+        <origin xyz="0 0 0.11" rpy="0 0.23 0.0"/>
+    </sensor_d435>
+</robot>

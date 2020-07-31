@@ -1,0 +1,11 @@
+# Check if objects in image
+
+# Goal definition
+std_msgs/String obj_name
+
+---
+# Result definition
+darknet_ros_msgs/BoundingBoxes bounding_boxes
+
+---
+# Feedback definition

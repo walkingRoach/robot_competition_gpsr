@@ -1,0 +1,215 @@
+#BNF+IAT 1.0 GB2312;
+!grammar mission;
+
+!slot <hello>;
+
+!slot <time>;
+
+!slot <data>;
+!slot <weather>;
+
+!slot <mine>;
+!slot <take>;
+
+!slot <guestname>;
+!slot <obj>;
+                                
+!slot <follow>;
+
+!slot <open>;
+!slot <close>;
+!slot <temperature>;
+
+!slot <hour>;
+!slot <minuteTen>;
+!slot <minuteOne>;
+!slot <call>;
+
+!slot <why>;
+
+!slot <hi>;
+
+!slot <who>;
+
+!slot <height>;
+
+!slot <birthday>;
+
+!slot <yourName>;
+
+!slot <niceToMeetYou>;
+
+!slot <iLoveYou>;
+
+!slot <iLikeYou>;
+
+!slot <dream>;
+
+!slot <youAreCute>;
+
+!slot <doYouLikeMe>;
+
+!slot <whatAreYouDoing>;
+
+!slot <gender>;
+
+!slot <age>;
+
+!slot <checkme>;
+
+!slot <youArePig>;
+
+!slot <movie>;
+
+!slot <youCan>;
+
+!slot <yes>;
+
+!slot <lie>;
+
+!slot <talkRubbish>;
+
+!slot <chat>;
+
+!slot <angery>;
+
+!slot <anger>;
+
+!slot <understand>;
+
+!slot <ha>;
+
+!slot <bye>;
+
+!slot <stupid>;
+
+!slot <human>;
+
+!slot <likePerson>;
+
+!slot <doesItReally>;
+
+!slot <really>;
+
+!start <task>;
+
+<task>:<mission1>|<mission2>|<mission3>|<mission4>|<mission5>|<mission6>|<mission7>|<mission8>|<mission9>|<mission10>|<mission11>|<mission12>|<mission13>|<mission14>|<mission15>|<mission16>|<mission17>|<mission18>|<mission19>|<mission20>|<mission21>|<mission22>|<mission23>|<mission24>|<mission25>|<mission26>|<mission27>|<mission28>|<mission29>|<mission30>|<mission31>|<mission32>|<mission33>|<mission34>|<mission35>|<mission36>;
+<mission1>:<hello>;
+<hello>:hello|你好;
+
+<mission2>:<time>;
+<time>:几点了|现在几点了;
+
+<mission3>:<data><weather>;
+<data>:今天|现在|昨天|明天;
+<weather>:什么天气;
+
+<mission4>:<mine><guestname><take><obj>|<take><obj>;
+<mine>:我是|我叫;
+<guestname>:拉文|迈克尔|欧全林;
+<take>:帮我拿|拿;
+<obj>:芬达|可乐|椰汁;
+
+<mission5>:<open>|<close>;
+<open>:开电风扇|打开电风扇|开电灯|打开电灯;
+<close>:关闭电风扇|关电风扇|关闭电灯|关电灯;
+
+<mission6>:<data><temperature>|<temperature>;
+<temperature>:现在室内多少度|现在室内几度;
+/*
+<mission7>:<hour>[<minuteTen>][<minuteOne>]<call>;
+<hour>:零点|一点|两点|三点|四点|五点|六点|七点|八点|九点|十点|十一点|十二点;
+<minuteTen>:一十|二十|三十|四十|五十;
+<minuteOne>:零|一|二|三|四|五|六|七|八|九;
+<call>:叫我|叫我起床;
+*/
+<mission7>:<follow>;
+<follow>:请跟上我;
+
+<mission8>:<why>;
+<why>:为什么;
+
+<mission9>:<hi>;
+<hi>:hi|你好呀;
+
+<mission10>:<who>;
+<who>:你是谁|你叫什么|你叫什么名字;
+
+<mission11>:<height>;
+<height>:你多高;
+
+<mission12>:<birthday>;
+<birthday>:你的生日是什么时候;
+
+<mission13>:<yourName>;
+<yourName>:你的名字;
+
+<mission14>:<niceToMeetYou>;
+<niceToMeetYou>:很高兴认识你;
+
+<mission15>:<iLoveYou>;
+<iLoveYou>:我爱你;
+
+<mission16>:<iLikeYou>;
+<iLikeYou>:我喜欢你;
+
+<mission17>:<dream>;
+<dream>:你有梦想吗;
+
+<mission18>:<youAreCute>;
+<youAreCute>:你真可爱;
+
+<mission19>:<doYouLikeMe>;
+<doYouLikeMe>:你喜欢我吗;
+
+<mission20>:<whatAreYouDoing>;
+<whatAreYouDoing>:你在干什么|你在干什么呀;
+
+<mission21>:<gender>;
+<gender>:你是男生还是女生;
+
+<mission22>:<age>;
+<age>:你几岁|你几岁了|你多大|你多大了;
+
+<mission23>:<checkme>;
+<checkme>:猜猜我是谁;
+
+<mission24>:<youArePig>;
+<youArePig>:你是猪;
+
+<mission25>:<movie>;
+<movie>:你喜欢什么电影;
+
+<mission26>:<youCan>;
+<youCan>:你会干什么|你能干什么;
+
+<mission27>:<yes>;
+<yes>:对的;
+
+<mission28>:<lie>;
+<lie>:你说谎;
+
+<mission29>:<talkRubbish>;
+<talkRubbish>:你瞎说;
+
+<mission30>:<chat>;
+<chat>:聊聊天吧;
+
+<mission31>:<angery>;
+<angery>:我好气|我好气哦;
+
+<mission32>:<anger>;
+<anger>:你好讨厌|我生气了;
+
+<mission33>:<understand>;
+<understand>:你懂什么;
+
+<mission34>:<ha>;
+<ha>:哈哈;
+
+<mission35>:<bye>;
+<bye>:再见|拜拜;
+
+<mission36>:<stupid>;
+<stupid>:你好笨|你不太聪明|你真笨;
+

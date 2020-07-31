@@ -1,0 +1,26 @@
+yolo_model:
+  config_file:
+    name: final-yolov3-tiny-home.cfg
+    # name: yolov3-tiny-home.cfg
+  weight_file:
+    # name: self-yolov3-tiny-home_test.weights
+    name: yolov3-tiny-home_130000.weights
+    # name: yolov3-tiny-home_340000.weights
+    # name: with-sit-yolov3-tiny-home_70000.weights
+    # name: final-yolov3-tiny-home_50000.weights
+  threshold:
+    value: 0.4
+  detection_classes:
+    names:
+      - face
+      - people
+      - milk
+      - water
+      - chips
+      - porridge
+      - safeguard
+      - napkin
+      - sprite
+      - laoganma
+      - cola
+      - icetea

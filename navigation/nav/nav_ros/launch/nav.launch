@@ -1,0 +1,41 @@
+<launch>
+    <rosparam file="$(find nav_ros)/param/ros.yaml"/>
+
+    <!--<node name="MapServer" pkg="map_server" type="map_server" output="screen" args="$(find nav_ros)/maps/map_20180813_final.yaml"/>-->
+
+    <!--<param name="/use_sim_time" value="false" />-->
+    <arg name="model" default="$(find xacro)/xacro --inorder '$(find nav_ros)/urdf/mrobot_with_d435.urdf.xacro'" />
+    <!--<arg name="gui" default="true" />-->
+
+    <param name="robot_description" command="$(arg model)" />
+
+    <!--<param name="use_sim_time" value="false" />-->
+
+    <node name="MapServer" pkg="map_server" type="map_server" output="screen" args="$(find nav_ros)/maps/0828.yaml"/>
+
+    <include file="$(find dashgo_nav)/launch/include/odom/teb_move_base.launch" />
+
+    <include file="$(find nav_ros)/launch/amcl_diff.launch" />
+    <include file="$(find motor_control_3dx)/launch/start_auto.launch" />
+    <include file="$(find ydlidar)/launch/lidar.launch" />
+
+    <arg name="gui" default="true" />
+    <!--<param name="scale_linear" value="0.1" type="double"/>-->
+    <!--<param name="scale_angular" value="0.4" type="double"/>-->
+    <!--</node>-->
+    <param name="use_gui" value="$(arg gui)"/>
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <!--<node pkg="tf" type="static_transform_publisher" name="map_to_base_link" args="0.0 0.0 0.1 0 0 0.0 /map /base_footprint 10"/>-->
+    <!--<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0 0 0.0 /map /odom 100"/>-->
+    <node pkg="tf" type="static_transform_publisher" name="odom_to_base_link" args="0.0 0.0 0.05 0 0 0.0 /base_link /base_footprint 10"/>
+    <node pkg="robot" type="save_pos_node.py" name="save_pos_node" output="screen">
+        <param name="save_path" value="/home/ubuntu/Desktop/pose.txt"/>
+    </node>
+
+    <!--<node name="serial_example_node" pkg="uart_serial" type="serial_example_node" output="screen" />-->
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_ros)/config/nav.rviz" required="true" />
+</launch>

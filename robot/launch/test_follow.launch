@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <arg name="database" default="$(find robot)/datasets/" />
+    <arg name="model_path" default="$(find robot)/models/facenet/20180402-114759/20180402-114759.pb" />
+
+    <node pkg="robot" type="test_follow_communication.py" name="test_follow_communication" output="screen">
+        <param name="model_path" value="$(arg model_path)" />
+        <param name="database" value="$(arg database)" />
+        <param name="subscribe_bounding_boxes_topic" value="/darknet_ros/bounding_boxes" />
+        <param name="subscribe_image_topic" value="/darknet_ros/detection_image" />
+        <param name="action_detection_topic" value="/darknet_ros/check_for_objects" />
+    </node>
+</launch>

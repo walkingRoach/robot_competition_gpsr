@@ -1,0 +1,211 @@
+<aiml version="1.0" encoding="UTF-8">
+    <category>
+        <pattern>叫 什 么</pattern>
+        <template>
+            <srai>NAME</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*叫 什 么</pattern>
+        <template>
+            <srai>NAME</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>现 在 室 内 多 少 度</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_temperature.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NAME</pattern>
+        <template>
+            我是浙工大服务机器人
+        </template>
+    </category>
+
+    <category>
+        <pattern>今 天 什 么 天 气</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_weather.py hangzhou today</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>今 天 什 么 天 气 *</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_weather.py hangzhou today</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>昨 天 什 么 天 气</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_weather.py hangzhou yesterday</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>昨 天 什 么 天 气 *</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_weather.py hangzhou yesterday</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>明 天 什 么 天 气</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_weather.py hangzhou tomorrow</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>明 天 什 么 天 气 *</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_weather.py hangzhou tomorrow</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*几 点 了</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py</system>
+        </template>
+    </category>
+
+     <category>
+        <pattern>几 点 了</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>我 是 * 拿 *</pattern>
+        <template>
+            m好的<star index="1" />马上去拿<star index="2" />mission1
+        </template>
+    </category>
+
+    <category>
+        <pattern>* 拿 *</pattern>
+        <template>
+            m好的马上去拿<star index="2" />mission1
+        </template>
+    </category>
+
+    <category>
+        <pattern>拿 *</pattern>
+        <template>
+            m好的马上去拿<star index="1" />mission1
+        </template>
+    </category>
+
+    <category>
+        <pattern> </pattern>
+        <template>
+            我没听清楚
+        </template>
+    </category>
+
+    <category>
+        <pattern>*上 一 句 说 了 什 么</pattern>
+        <template>
+            <input index="2" />
+        </template>
+    </category>
+
+    <category>
+        <pattern>*开 电 风 扇</pattern>
+        <template>
+            m好的正在为你打开风扇mission2
+        </template>
+    </category>
+
+    <category>
+        <pattern>开 电 风 扇</pattern>
+        <template>
+            m好的正在为你打开风扇mission2
+        </template>
+    </category>
+
+    <category>
+        <pattern>*关 电 风 扇</pattern>
+        <template>
+            m好的正在为你关闭风扇mission3
+        </template>
+    </category>
+
+    <category>
+        <pattern>关 闭 电 风 扇</pattern>
+        <template>
+            m好的正在为你关闭风扇mission3
+        </template>
+    </category>
+
+    <category>
+        <pattern>关 电 风 扇</pattern>
+        <template>
+            m好的正在为你关闭风扇mission3
+        </template>
+    </category>
+
+    <category>
+        <pattern>*开 电 灯</pattern>
+        <template>
+            m好的正在为你打开电灯mission4
+        </template>
+    </category>
+
+    <category>
+        <pattern>开 电 灯</pattern>
+        <template>
+            m好的正在为你打开电灯mission4
+        </template>
+    </category>
+
+    <category>
+        <pattern>*关 电 灯</pattern>
+        <template>
+            m好的正在为你关闭电灯mission5
+        </template>
+    </category>
+
+    <category>
+        <pattern>关 闭 电 灯</pattern>
+        <template>
+            m好的正在为你关闭电灯mission5
+        </template>
+    </category>
+
+    <category>
+       <pattern>请跟上我</pattern>
+       <template>
+          m好的我会跟上你mission6
+       </template>
+    </category>
+
+    <category>
+       <pattern>猜猜我是谁</pattern>
+       <template>
+          m好的请低下头看着我mission7
+       </template>
+    </category>
+
+    <category>
+        <pattern>现在室内多少度</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_temperature.py</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*点 * 叫 我*</pattern>
+        <template>
+            m<star index="1" />点<star index="2" />我回叫你的mission6
+        </template>
+    </category>
+</aiml>

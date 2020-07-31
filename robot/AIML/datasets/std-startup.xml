@@ -1,0 +1,9 @@
+<aiml version="1.0">
+    <category>
+        <pattern>LOAD AIML B</pattern>
+        <template>
+            <learn>/home/ubuntu/robot_ros/src/robot/AIML/datasets/test_aiml.aiml</learn>
+            <learn>/home/ubuntu/robot_ros/src/robot/AIML/datasets/basic_chat.aiml</learn>
+        </template>
+    </category>
+</aiml>

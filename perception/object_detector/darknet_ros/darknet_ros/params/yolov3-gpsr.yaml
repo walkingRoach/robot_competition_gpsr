@@ -1,0 +1,15 @@
+yolo_model:
+
+  config_file:
+    name: yolov3-gpsr.cfg
+  weight_file:
+    name: yolov3-gpsr.weights
+  threshold:
+    value: 0.4
+  detection_classes:
+    names:
+      - people
+      - lemon
+      - apple
+      - pear
+

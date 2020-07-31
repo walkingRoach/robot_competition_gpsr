@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!--<arg name="joy_dev" default="/dev/input/js0"/>-->
+    <arg name="motor_dev" default="/dev/motor_driver"/>
+    
+	<!--<node name="joy_node" pkg="joy" type="joy_node" output = "screen">-->
+      <!--<param name="dev" value="$(arg joy_dev)"/>-->
+	<!--</node>-->
+
+    <node name="Sonar1_broadcaster" pkg="tf" type="static_transform_publisher" args="0.090 0.0 0.1 0 0 0 base_link ultrasound1 50"/>
+    <node name="Sonar2_broadcaster" pkg="tf" type="static_transform_publisher" args="-0.2066 0.0876 0.1 2.62 0 0 base_link ultrasound2 50"/>
+    <node name="Sonar3_broadcaster" pkg="tf" type="static_transform_publisher" args="-0.2066 -0.0876 0.1 -2.62 0 0 base_link ultrasound3 50"/>
+
+    <node name="motor_driver_3dx" pkg="motor_control_3dx" type="motor_driver_3dx" output = "screen" >
+        <param name="dev" value="$(arg motor_dev)"/>
+        <param name="baud" value="115200"/>
+        <param name="vth_scale" value="1.0"/>
+    </node>
+    
+</launch>

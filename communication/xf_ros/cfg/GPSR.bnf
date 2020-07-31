@@ -1,0 +1,28 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar gpsr;
+
+!slot <take>;
+!slot <aobject>;
+
+!slot <me>;
+!slot <vbdeliver>;
+
+!slot <name>;
+
+!start <complex>;
+<complex>:<mission1>;
+<mission1>:<getobj> and <deliver>;
+
+<getobj>:<take> a <aobject>;
+<take>:take|grasp|get;
+<aobject>:apple|lemon|pear|water|beer;
+
+<deliver>:<vbdeliver> it to <target>;
+<vbdeliver>:bring|carry|deliver|take;
+<target>:(<me>)|(<name><wherein><room>)|(the <placement>);
+
+<me>:me;
+<name>:alex|angel|edward|homer|jamie|john|kevin|kurt|tracy|robin|eve|jane|liza|melissa|sophia;
+<room>:kitchen|livingroom|bedroom|hallway;
+<wherein>:(in the)|(at the)|(which is in the);
+<placement>:(kitchen table)|(kitchen counter)|cupboard|bar|(couch table)|(dinner table)|sofa|(left bedside table)|(right bedside table)|desk|bed|bookcase|(hallway table);

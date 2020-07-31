@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<launch>
+    <include file="$(find xf_ros)/launch/tts.launch" />
+    <include file="$(find xf_ros)/launch/asr_gpsr.launch" />
+
+    <node pkg="robot" type="gpsr_sm.py" name="gpsr_sm" output="screen">
+    </node>
+
+    <!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_ros)/config/nav.rviz" required="true" />-->
+</launch>

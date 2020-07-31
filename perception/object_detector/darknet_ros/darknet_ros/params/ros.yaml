@@ -1,0 +1,37 @@
+subscribers:
+  camera_reading:
+     topic: /camera/color/image_raw
+     queue_size: 1
+  depth_reading:
+     topic: /camera/depth/image_rect_raw
+     queue_size: 1
+
+actions:
+  camera_reading:
+    name: /darknet_ros/check_for_objects
+  home_asr:
+    name: /xf_asr/home_recognize
+  delay_time: 15
+
+publishers:
+  object_detector:
+    topic: /darknet_ros/found_object
+    queue_size: 1
+    latch: false
+
+  bounding_boxes:
+    topic: /darknet_ros/bounding_boxes
+    queue_size: 1
+    latch: false
+
+  detection_image:
+    topic: /darknet_ros/detection_image
+    queue_size: 1
+    latch: true
+
+test_model: false
+yolo_always_detect: false
+image_view:
+  enable_opencv: false
+  wait_key_delay: 3
+  enable_console_output: false

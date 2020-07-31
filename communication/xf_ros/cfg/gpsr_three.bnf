@@ -1,0 +1,27 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar gpsrthree;
+
+!slot <vbspeak>;
+!slot <day>;
+!slot <vbfollow>;
+
+!start <complex>;
+<complex>:<goroom><findprs> and (<talk>|<follow>);
+
+<goroom>:<vbgoto> the <room>;
+<findprs>:<vbfind> a person;
+<vbfind>:find|(look for);
+<vbgoto>:(go to)|(navigate to)|(reach)|(get into);
+<room>:kitchen|livingroom|bedroom|hallway;
+
+<talk>:<tell>|(answer a question);
+<tell>:<vbspeak>(<time>|<date>|<name>);
+
+<vbspeak>:tell|say|speak;
+<time>:(the time)|(what time is it)|(tell the date);
+<name>:(your name)|(the name of your team);
+<date>:(tell the date)|(what day is <day>);
+<day>:today|tomorrow;
+
+<follow>:(<vbfollow> her)|(<vbfollow> her to the <room>);
+<vbfollow>:follow;

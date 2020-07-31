@@ -1,0 +1,12 @@
+time time
+float32 odom1
+float32 odom2
+float32 vel1
+float32 vel2
+float32 sonar_distance1
+float32 sonar_distance2
+float32 sonar_distance3
+float32 ir_distance1
+float32 ir_distance2
+uint8 photoelectric_switch1
+uint8 photoelectric_switch2

@@ -1,0 +1,9 @@
+<aiml version="1.0">
+    <category>
+        <pattern>GPSR</pattern>
+        <template>
+            <learn>/home/ubuntu/robot_ros/src/robot/AIML/datasets/gpsr_job.aiml</learn>
+            <learn>/home/ubuntu/robot_ros/src/robot/AIML/datasets/gpsr_question.aiml</learn>
+        </template>
+    </category>
+</aiml>

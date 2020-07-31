@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="config" default="$(find pysot_tracker)/experiments/siamrpn_mobilev2_l234_dwxcorr/config.yaml" />
+    <arg name="snapshot" default="$(find pysot_tracker)/experiments/siamrpn_mobilev2_l234_dwxcorr/model.pth" />
+    <node pkg="pysot_tracker" type="track.py" name="test_track" output="screen">
+        <param name="config" value="$(arg config)" />
+        <param name="snapshot" value="$(arg snapshot)" />
+        <param name="visualize" type="bool" value="true" />
+        <param name="is_select" type="bool" value="false" />
+    </node>
+
+    <node pkg="kw_arm" type="FixedMotion" name="arm_controller" output="screen" >
+        <param name="SerialPort"  type="string" value="/dev/kw_arm"/>
+        <!--<初始位置，遵循右手坐标系，x轴正方向朝前>-->
+        <param name="InitX"  type="int" value="200"/>
+        <param name="InitY"  type="int" value="0"/>
+        <param name="InitZ"  type="int" value="180"/>
+        <param name="InitPitch"  type="int" value="0"/>
+        <!--<固定动作抓取时，机械臂第一步前伸的距离>-->
+        <param name="ForwardDistance"  type="int" value="350"/>
+        <param name="GripDistance"  type="int" value="40"/>
+    </node>
+
+    <!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_ros)/config/D435.rviz" required="true" />-->
+</launch>

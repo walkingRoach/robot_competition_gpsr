@@ -1,0 +1,27 @@
+<launch>
+  <include file="$(find dashgo_driver)/launch/driver_imu.launch"/>
+  <include file="$(find ydlidar)/launch/lidar.launch"/>
+  <include file="$(find dashgo_description)/launch/dashgo_description.launch"/>
+  <arg name="map_file" default="$(find dashgo_nav)/maps/eai_map_imu.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+  <arg name="initial_pose_x" default="0.0"/> 
+  <arg name="initial_pose_y" default="0.0"/> 
+  <arg name="initial_pose_a" default="0.0"/>
+  <include file="$(find dashgo_nav)/launch/include/imu/amcl.launch.xml">
+    <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
+    <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
+    <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+  </include>
+  <include file="$(find dashgo_nav)/launch/include/imu/teb_move_base.launch"/>
+  <include file="$(find world_canvas_server)/launch/world_canvas_server.launch"/>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+  <node name="robot_pose_publisher" pkg="robot_pose_publisher" type="robot_pose_publisher" />
+  <node name="multi_mark" pkg="dashgo_tools" type="show_mark.py" output="screen" />
+  <node name="multiGoalListen" pkg="dashgo_tools" type="multiGoalListen.py" respawn="true" />
+  <node name="cancelGoalListen" pkg="dashgo_tools" type="cancelGoalListen.py" respawn="true" />
+  <node pkg="laser_filters" type="scan_to_scan_filter_chain" output="screen" name="laser_filter">
+      <rosparam command="load" file="$(find dashgo_tools)/conf/box_filter.yaml" />
+  </node>
+  <node name="robot_data" pkg="dashgo_tools" type="robot_data.py" respawn="true" />
+  <node name="cmd_listen" pkg="dashgo_tools" type="cmdListen.py" respawn="true" />
+</launch>

@@ -1,0 +1,831 @@
+<aiml version="1.0" encoding="UTF-8">
+    <category>
+        <pattern>Go to the * and find the *</pattern>
+        <template>
+            Do you want me to go to <star index="1" /> and find the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * and look for the *</pattern>
+        <template>
+            Do you want me to go to <star index="1" /> and look for the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * and find the *</pattern>
+        <template>
+            Do you want me to go to <star index="1" /> and find the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * and look for the *</pattern>
+        <template>
+            Do you want me to go to <star index="1" /> and look for the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * and find the *</pattern>
+        <template>
+            Do you want me to go to <star index="1" /> and find the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach to the * and look for the *</pattern>
+        <template>
+            Do you want me to go to <star index="1" /> and look for the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Get into the * and find the *</pattern>
+        <template>
+            Do you want me to go to <star index="1" /> and find the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Get into the * and look for the *</pattern>
+        <template>
+            Do you want me to go to <star index="1" /> and look for the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>take the * from * and * it to me</pattern>
+        <template>
+            Do you want me to take <star index="1" /> from <star index="2" /> and <star index="3" /> it to you right
+        </template>
+    </category>
+
+    <category>
+        <pattern>take the * from * and * it to * at the *</pattern>
+        <template>
+            Do you want me to take <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>take the * from * and * it to * in the *</pattern>
+        <template>
+            Do you want me to take <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>take the * from * and * it to * which is in the *</pattern>
+        <template>
+            Do you want me to take <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>take the * from * and * it the *</pattern>
+        <template>
+            Do you want me to take <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>grasp the * from * and * it to me</pattern>
+        <template>
+            Do you want me to grasp <star index="1" /> from <star index="2" /> and <star index="3" /> it to you right
+        </template>
+    </category>
+
+    <category>
+        <pattern>grasp the * from * and * it to * at the *</pattern>
+        <template>
+            Do you want me to grasp <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>grasp the * from * and * it to * in the *</pattern>
+        <template>
+            Do you want me to grasp <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>grasp the * from * and * it to * which is in the *</pattern>
+        <template>
+            Do you want me to grasp <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>grasp the * from * and * it the *</pattern>
+        <template>
+            Do you want me to grasp <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>get the * from * and * it to me</pattern>
+        <template>
+            Do you want me to get <star index="1" /> from <star index="2" /> and <star index="3" /> it to you right
+        </template>
+    </category>
+
+    <category>
+        <pattern>get the * from * and * it to * at the *</pattern>
+        <template>
+            Do you want me to get <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>get the * from * and * it to * in the *</pattern>
+        <template>
+            Do you want me to get <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>get the * from * and * it to * which is in the *</pattern>
+        <template>
+            Do you want me to get <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> at the <star index="5" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>get the * from * and * it the *</pattern>
+        <template>
+            Do you want me to get <star index="1" /> from <star index="2" /> and <star index="3" /> it to <star index="4" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and * the time</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and * what time is it</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him what time is it
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and * the date</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and * what day is today</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him what day is today
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and * what day is tomorrow</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him what day is tomorrow
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and * the your name</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him the my name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and * the the name of your team</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him the my team name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and answer a question</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and ask him a question
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and follow her</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * find a person and follow her to the *</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and follow her to the <star index="2" /> right
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>Go to the * look for a person and * the time</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and * what time is it</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him what time is it
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and * the date</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and * what day is today</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him what day is today
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and * what day is tomorrow</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him what day is tomorrow
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and * the your name</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him the my name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and * the the name of your team</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and tell him the my team name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and answer a question</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and ask him a question
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and follow her</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>Go to the * look for a person and follow her to the *</pattern>
+        <template>
+            Do you want me to go to the <star index="1" />, find a person and follow her to the <star index="2" /> right
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>Navigate to the * look for a person and follow her</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and follow her to the *</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and follow her to the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and * the time</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and * what time is it</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him what time is it
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and * the date</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and * what day is today</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him what day is today
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and * what day is tomorrow</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him what day is tomorrow
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and * the your name</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him the my name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and * the the name of your team</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him the my team name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * look for a person and answer a question</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and ask him a question
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>Navigate to the * find a person and follow her</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and follow her to the *</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and follow her to the <star index="3" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and * the time</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and * what time is it</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him what time is it
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and * the date</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and * what day is today</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him what day is today
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and * what day is tomorrow</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him what day is tomorrow
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and * the your name</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him the my name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and * the the name of your team</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and tell him the my team name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and answer a question</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and ask him a question
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and follow her</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>Navigate to the * find a person and follow her to the *</pattern>
+        <template>
+            Do you want me to navigate to the <star index="1" />, find a person and follow her to the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and follow her</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and follow her to the *</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and follow her to the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and * the time</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and * what time is it</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him what time is it
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and * the date</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and * what day is today</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him what day is today
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and * what day is tomorrow</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him what day is tomorrow
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and * the your name</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him the my name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and * the the name of your team</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him the my team name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * look for a person and answer a question</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and ask him a question
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and follow her</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and follow her to the *</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and follow her to the <star index="3" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and * the time</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and * what time is it</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him what time is it
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and * the date</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and * what day is today</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him what day is today
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and * what day is tomorrow</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him what day is tomorrow
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and * the your name</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him the my name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and * the the name of your team</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and tell him the my team name
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and answer a question</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and ask him a question
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and follow her</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>Reach the * find a person and follow her to the *</pattern>
+        <template>
+            Do you want me to reach the <star index="1" />, find a person and follow her to the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and follow her</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and follow her to the *</pattern>
+        <template>
+            Do you want me get into navigate to the <star index="1" />, find a person and follow her to the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and * the time</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and * what time is it</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him what time is it
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and * the date</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and * what day is today</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him what day is today
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and * what day is tomorrow</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him what day is tomorrow
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and * the your name</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him the my name
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and * the the name of your team</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him the my team name
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * look for a person and answer a question</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and ask him a question
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and follow her</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and follow her to the *</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and follow her to the <star index="3" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and * the time</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and * what time is it</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him what time is it
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and * the date</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him the time
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and * what day is today</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him what day is today
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and * what day is tomorrow</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him what day is tomorrow
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and * the your name</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him the my name
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and * the the name of your team</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and tell him the my team name
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and answer a question</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and ask him a question
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and follow her</pattern>
+        <template>
+            Do you want me to get into the <star index="1" />, find a person and follow her
+        </template>
+    </category>
+
+    <category>
+        <pattern>get into the * find a person and follow her to the * </pattern>
+        <template>
+            Do you want me to get into the <star index="1" /> find a person and follow her to the <star index="2" /> right
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell name</pattern>
+        <template>
+            My name is Zhejiang University of Technology Service Robot
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell team name</pattern>
+        <template>
+            my team name is Zhejiang University of Technology Service Robot team
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell today</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date today</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell tomorrow</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date tomorrow</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell month</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date moth</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell week</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date week</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell date</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py date date</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell time</pattern>
+        <template>
+            <system>python2 /home/ubuntu/robot_ros/src/robot/AIML/get_time.py time today</system>
+        </template>
+    </category>
+
+    <category>
+        <pattern>tell thank</pattern>
+        <template>
+            thank you I get it
+        </template>
+    </category>
+
+</aiml>

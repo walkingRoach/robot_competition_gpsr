@@ -1,0 +1,37 @@
+﻿#BNF+IAT 1.0 GB2312;
+!grammar call;
+!slot <contact>;
+!slot <callPre>;
+!slot <callPhone>;
+!slot <like>;
+!slot <fruit>;
+!slot <yougo>;
+!slot <city>;
+!slot <ma>;
+!slot <hour>;
+!slot <minuteTen>;
+!slot <minuteOne>;
+!slot <call>;
+
+!start <Start>;
+<Start>:<start1> | <start2> | <start3> | <mission7>;
+
+<start1>:[<callPre>]<callPhone><contact>;
+<contact>:小王|老王;
+<callPre>:请|我想;
+<callPhone>:打电话给;
+
+<start2>:<like><fruit><ma>;
+<like>:你喜欢吃|你想吃|你爱吃;
+<fruit>:苹果|梨子|香蕉;
+<ma>:吗;
+
+<start3>:<yougo><city><ma>;
+<yougo>:你去过;
+<city>:北京|天津|上海|重庆;
+
+<mission7>:<hour>[<minuteTen>]<minuteOne><call>;
+<hour>:零点|一点|两点|三点|四点|五点|六点|七点|八点|九点|十点|十一点|十二点;
+<minuteTen>:一十|二十|三十|四十|五十;
+<minuteOne>:零|一|二|三|四|五|六|七|八|九;
+<call>:叫我|叫我起床;

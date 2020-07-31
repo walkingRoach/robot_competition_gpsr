@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+  <!--<node name="image_view" pkg="image_view" type="image_view" respawn="false" output="screen">-->
+    <!--<remap from="image" to="/usb_cam/image_raw"/>-->
+    <!--<param name="autosize" value="true" />-->
+  <!--</node>-->
+
+    <node pkg="facenet_ros" type="facenet_home_node.py" name="facenet_home_node" output="screen">
+        <param name="model_path" value="/home/lennon/home_ws/models/facenet/20180402-114759/20180402-114759.pb" />
+        <param name="database" value="/home/lennon/home_ws/datasets/" />
+        <param name="subscribe_image_topic" value="/darknet_ros/detection_image" />
+        <param name="subscribe_bounding_boxes_topic" value="/darknet_ros/bounding_boxes" />
+        <param name="action_detection_topic" value="/darknet_ros/check_for_objects" />
+    </node>
+</launch>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find robot)/launch/D435.launch" />
+
+    <node pkg="robot" type="save_color_depth_img.py" name="save_color_and_depth"/>
+
+    <!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_ros)/config/D435.rviz" required="true" />-->
+</launch>

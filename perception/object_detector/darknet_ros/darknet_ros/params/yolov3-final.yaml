@@ -1,0 +1,22 @@
+yolo_model:
+
+  config_file:
+    name: yolov3-final.cfg
+  weight_file:
+    name: yolov3-final.weights
+  threshold:
+    value: 0.4
+  detection_classes:
+    names:
+      - people
+      - bathCream
+      - biscuits
+      - chips
+      - greenTea
+      - herbalTea
+      - milkTea
+      - napkin
+      - oreo
+      - pepsi
+      - porridge
+

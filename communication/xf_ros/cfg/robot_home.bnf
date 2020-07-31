@@ -1,0 +1,107 @@
+#BNF+IAT 1.0 GB2312;
+!grammar mission;
+
+!slot <hello>;
+
+!slot <time>;
+
+!slot <data>;
+!slot <weather>;
+
+!slot <mine>;
+!slot <take>;
+
+!slot <guestname>;
+!slot <obj>;
+
+!slot <light>;
+!slot <temperature>;
+
+!slot <hour>;
+!slot <minuteTen>;
+!slot <minuteOne>;
+!slot <call>;
+
+!slot <missionGroup1>                                                         
+
+!slot <why>;
+
+!slot <hi>;
+
+!slot <who>;
+
+!slot <height>;
+
+!slot <birthday>;
+
+!slot <yourName>;
+
+!slot <niceToMeetYou>;
+
+!slot <iLoveYou>;
+
+!slot <iLikeYou>;
+
+
+
+!start <task>;
+<task>:<mission1>|<mission2>|<mission3>|<mission4>|<mission5>|<mission6>|<mission7>;
+/*
+<missionGroup1>:<mission8>|<mission9>|<mission10>|<mission11><mission12><mission13>|<mission14>|<mission15>|<mission16>;
+*/
+<mission1>:<hello>;
+<hello>:hello|你好;
+
+<mission2>:<time>;
+<time>:几点了|现在几点了;
+
+<mission3>:<data><weather>;
+<data>:今天|现在|昨天|明天;
+<weather>:什么天气;
+
+<mission4>:<mine><guestname><take><obj>|<take><obj>;
+<mine>:我是|我叫;
+<guestname>:拉文|迈克尔|欧全林;
+<take>:帮我拿|拿;
+<obj>:芬达|王老吉|水;
+
+<mission5>:<light>;
+<light>:开灯;
+
+<mission6>:<data><temperature>;
+<temperature>:现在室内多少度|现在室内几度;
+
+<mission7>:<hour>[<minuteTen>][<minuteOne>]<call>;
+<hour>:零点|一点|两点|三点|四点|五点|六点|七点|八点|九点|十点|十一点|十二点;
+<minuteTen>:一十|二十|三十|四十|五十;
+<minuteOne>:零|一|二|三|四|五|六|七|八|九;
+<call>:叫我|叫我起床;
+/*
+<mission8>:<why>;
+<why>:为什么;
+
+<mission9>:<hi>;
+<hi>:hi|你好呀;
+
+<mission10>:<who>;
+<who>:你是谁|你叫什么|你叫什么名字;
+
+<mission11>:<height>;
+<height>:你多高;
+
+<mission12>:<birthday>;
+<birthday>:你的生日是什么时候;
+
+<mission13>:<yourName>;
+<yourName>:你的名字;
+
+<mission14>:<niceToMeetYou>;
+<niceToMeetYou>:很高兴认识你;
+
+<mission15>:<iLoveYou>;
+<iLoveYou>:我爱你;
+
+<mission16>:<iLikeYou>;
+<iLikeYou>:我喜欢你;
+*/
+

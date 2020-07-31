@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <node pkg="robot" type="save_pos_node.py" name="save_pos_node" output="screen">
+        <param name="save_path" value="$(find robot)/position/pose.txt" />
+    </node>
+</launch>

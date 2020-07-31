@@ -1,0 +1,34 @@
+<launch>
+    <rosparam file="$(find nav_ros)/param/ros.yaml"/>
+
+    <arg name="model" default="$(find xacro)/xacro --inorder '$(find nav_ros)/urdf/mrobot_with_d435.urdf.xacro'" />
+
+    <param name="robot_description" command="$(arg model)" />
+
+    <!--<param name="use_sim_time" value="false" />-->
+
+    <include file="$(find motor_control_3dx)/launch/start_auto.launch" />
+    <include file="$(find ydlidar)/launch/lidar.launch" />
+
+    <include file="$(find nav_ros)/launch/gmapping_base.launch" />
+
+    <!--<node name="nav_ros" pkg="nav_ros" type="keyboard_teleop.py" output="screen">-->
+        <!--<param name="scale_linear" value="0.1" type="double"/>-->
+        <!--<param name="scale_angular" value="0.4" type="double"/>-->
+    <!--</node>-->
+
+    <!--<node pkg="arbotix_python" type="arbotix_driver" name="arbotix" output="screen" >-->
+    <!--<rosparam file="$(find nav_ros)/param/arbotix.yaml" com mand="load" />-->
+    <!--<param name="sim" value="true" />-->
+    <!--</node>-->
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <!--<node pkg="tf" type="static_transform_publisher" name="map_to_base_link" args="0.0 0.0 0.1 0 0 0.0 /map /base_footprint 10"/>-->
+    <!--<node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0.0 0.0 0.0 0 0 0.0 /map /odom 100"/>-->
+    <!--<node pkg="tf" type="static_transform_publisher" name="odom_to_base_link" args="0.0 0.0 0.0 0 0 0.0 /odom /base_link 100"/>-->
+    <node pkg="tf" type="static_transform_publisher" name="odom_to_base_link" args="0.0 0.0 0.05 0 0 0.0 /base_link /base_footprint 10"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find nav_ros)/config/nav_ros.rviz" required="true" />
+</launch>

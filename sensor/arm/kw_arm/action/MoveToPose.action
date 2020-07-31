@@ -1,0 +1,15 @@
+# Define the goal
+float32 pose_x  
+float32 pose_y
+float32 pose_z
+float32 pose_pitch
+float32 pose_gripper
+---
+# Define the results
+# 1: target finished successfully
+# 2: target failed
+
+uint32 result
+---
+# Define a feedback message 
+float32 percent_complete

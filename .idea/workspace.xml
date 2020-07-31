@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="46abc9b0-aae8-4a88-8f8a-85df73cea94e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/robot/src/body/communication/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/robot/src/body/control/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/robot/src/test/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/robot/src/test/test_find_people.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communication/xf_ros/include/xf/linuxrec.h" beforeDir="false" afterPath="$PROJECT_DIR$/communication/xf_ros/include/xf/linuxrec.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communication/xf_ros/include/xf/msp_errors.h" beforeDir="false" afterPath="$PROJECT_DIR$/communication/xf_ros/include/xf/msp_errors.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/communication/xf_ros/src/asr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/communication/xf_ros/src/asr.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navigation/lacalization/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/perception/object_detector/darknet_ros/darknet/scripts/voc_label.py" beforeDir="false" afterPath="$PROJECT_DIR$/perception/object_detector/darknet_ros/darknet/scripts/voc_label.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perception/object_detector/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/perception/object_detector/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perception/tracker/kcf_tracker/src/kcftracker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/perception/tracker/kcf_tracker/src/kcftracker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perception/tracker/kcf_tracker/src/kcftracker.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/perception/tracker/kcf_tracker/src/kcftracker.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perception/tracker/kcf_tracker/src/runtracker.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/perception/tracker/kcf_tracker/src/runtracker.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/perception/tracker/pysot_tracker/src/toolkit/utils/region.c" beforeDir="false" afterPath="$PROJECT_DIR$/perception/tracker/pysot_tracker/src/toolkit/utils/region.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/datasets/欧全林1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/datasets/欧全林2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/datasets/欧全林3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/datasets/欧全林4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/datasets/欧全林5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1068.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1096.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1123.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1170.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1179.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1191.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1198.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1220.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1228.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1361.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1416.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1514.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1539.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1571.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1604.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1671.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1693.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1721.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1828.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/1840.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/614.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/62.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/647.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/67.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/695.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/731.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/786.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/813.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/851.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/897.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/depth/993.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/people/Jack_chips.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/robot/face_datasets/jack.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/image/people/Mary_herbalTea.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/body.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/body.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/communication/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/communication/asr.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/communication/asr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/communication/config_dict.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/communication/config_dict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/communication/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/communication/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/communication/gpsr_asr.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/communication/gpsr_asr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/config/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/config/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/config/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/control/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/control/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/control/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/follower.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_follower.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/get_odom.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_odom.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/gpsr_sm.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/gpsr_sm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/gpsr_sm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/gpsr_sm/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/gpsr_sm/get_job.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/gpsr_sm/get_job.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/gpsr_sm/go_room.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/gpsr_sm/go_room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/grasp/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/grasp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/grasp/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/grasp/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/memory/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/memory/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/memory/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/memory/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/perception/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/perception/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/perception/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/perception/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/perception/facenet.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/perception/facenet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/perception/facenet_home.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/perception/facenet_home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/perception/facenet_pytorch.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/perception/facenet_pytorch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/perception/inception_resnet_v1.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/perception/inception_resnet_v1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/perception/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/perception/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/sm/look_goods.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/sm/look_goods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_aiml.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_aiml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_capture.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_capture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_communication_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_communication_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_find_people.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/config/gpsr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_follow_communication.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_follow_communication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_get_identify_face.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_get_identify_face.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_get_pos.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_get_pos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_go_all_pos.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_go_all_pos.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_make_pdf.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_make_pdf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_perception_node.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_perception_node.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/test_torch.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_torch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/wait_door_open.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_wait_door_open.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/walk/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/walk/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/walk/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/walk/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/walk/transform_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/body/walk/transform_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/robot/src/walk_sm.py" beforeDir="false" afterPath="$PROJECT_DIR$/robot/src/test/test_walk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensor/laser/ydlidar/sdk/doc/html/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/sensor/laser/ydlidar/sdk/doc/html/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sensor/motor/motor_control_3dx/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sensor/motor/motor_control_3dx/CMakeLists.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dfpDuXJ39R7L3WaViqmM7sdecm" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tr_drive/src" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/robot/face_datasets" />
+      <recent name="$PROJECT_DIR$/robot/src/test" />
+      <recent name="$PROJECT_DIR$/robot/src/body" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="46abc9b0-aae8-4a88-8f8a-85df73cea94e" name="Default Changelist" comment="" />
+      <created>1592825885959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592825885959</updated>
+      <workItem from="1592825887044" duration="57000" />
+      <workItem from="1592825962000" duration="368000" />
+      <workItem from="1592827249841" duration="1273000" />
+      <workItem from="1592876200481" duration="242000" />
+      <workItem from="1592963205153" duration="91000" />
+      <workItem from="1595902980554" duration="12060000" />
+      <workItem from="1596091024232" duration="5776000" />
+      <workItem from="1596158192643" duration="18000" />
+      <workItem from="1596165505815" duration="8425000" />
+    </task>
+    <task id="LOCAL-00001" summary="first">
+      <created>1592825923425</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592825923425</updated>
+    </task>
+    <task id="LOCAL-00002" summary="first">
+      <created>1592826226973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592826226973</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first" />
+    <option name="LAST_COMMIT_MESSAGE" value="first" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+    <rosparam command="load" ns="xf_ros" file="$(find xf_ros)/cfg/xf.yaml"/>
+
+    <!--NOTES: asr_res_path must start with fo|-->
+    <arg name="tts_res_path" default="fo|$(find xf_ros)/res/tts/xiaoyan.jet;fo|$(find xf_ros)/res/tts/common.jet" />
+    <node pkg="xf_ros" type="tts_node" name="tts_node" output="screen">
+        <param name="tts_res_path" value="$(arg tts_res_path)" />
+        <param name="login_param" value="appid=5d4a725b, work_dir = ." />
+        <param name="audio_save_path" value="/home/ubuntu/Desktop/wav/" />
+        <param name="play_command" value="aplay" />
+    </node>
+</launch>

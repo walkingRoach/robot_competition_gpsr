@@ -1,0 +1,74 @@
+#BNF+IAT 1.0 UTF-8;
+!grammar mission;
+
+!slot <intro>;
+!slot <guestname>;
+
+!slot <go>;
+
+!slot <livingroom>;
+!slot <dingingroom>;
+!slot <kitchen>;
+!slot <bedroom>;
+!slot <ld>;
+!slot <dd>;
+!slot <kd>;
+!slot <bd>;
+
+!slot <grasp>;
+!slot <lookfor>;
+!slot <item>;
+
+!slot <give>;
+
+!start <missionstart>;
+/* <missionstart>:<task1>|<task2>; */
+<missionstart>:<task1>|<task2>;
+
+<task1>:<mission0><mission1><mission2><mission1>;
+<task2>:<mission0><mission1><mission2><mission3>;
+
+
+<mission0>:<intro><guestname>;
+<intro>:我是!id(401)|我的名字是!id(402);
+<guestname>:拉文!id(4000)|丹尼尔!id(4001)|迈克尔!id(4002)|杰克!id(4003)|费希尔!id(4004)|凯文!id(4005)|露丝!id(4006)|约翰!id(4007)|玛丽!id(4008)|亚当!id(4009);
+
+
+<mission1>:<go><location>;
+//<mission1>:<go><location><li>;
+<go>:过去!id(101)|去!id(101)|走到!id(101)|到!id(101)|移动到!id(101);
+
+<location>:([<livingroom>][<ld>])|([<dingingroom>][<dd>])|([<kitchen>][<kd>])|([<bedroom>][<bd>]);
+<livingroom>:客厅!id(1100);
+<ld>:长沙发!id(1101)|短沙发!id(1102)|茶几!id(1103)|圆桌!id(1104);
+<dingingroom>:餐厅!id(1200);
+<dd>:柜子!id(1201)|架子!id(1201)|长桌!id(1202)|桌子!id(1202)|餐桌!id(1202);
+<kitchen>:厨房!id(1300);
+<kd>:冰箱!id(1301)|架子!id(1302)|柜子!id(1302);
+<bedroom>:卧室!id(1400);
+<bd>:床!id(1401)|柜子!id(1402)|架子!id(1402)|圆桌!id(1403)|桌子!id(1403);
+
+<li>:那|那里;
+
+
+<mission2>:<ActionBring><item>;
+<ActionBring>:(<grasp>|<lookfor>);
+<grasp>:拿!id(201)|拿起!id(201)|抓!id(201)|抓起!id(201);
+<lookfor>:找到!id(202)|找!id(202);
+<item>:牛奶!id(2001)|薯片!id(2002)|可乐!id(2003)|冰红茶!id(2004)|绿茶!id(2005)|矿泉水!id(2006)|雪碧!id(2007)|果粒橙!id(2008)|橙汁!id(2008)|八宝粥!id(2009);
+
+
+<mission3>:<give>;
+<give>:给我!id(302)|带给我!id(302)|拿到这!id(302)|拿给我!id(302);
+
+
+/*
+注:
+    1)变量名称不能超过15字符
+    2)编号!id和结束符号;前不可是标点']'等,可用括号
+
+
+可能的任务:
+My name is xxx, Move to the LOCATION, grasp the ITEM, and bring it to me.
+My name is xxx, Move to the LOCATION, grasp the ITEM, and bring it to the LOCATION.
+*/

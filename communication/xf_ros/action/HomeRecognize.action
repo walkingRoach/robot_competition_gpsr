@@ -1,0 +1,10 @@
+# Goal definition
+std_msgs/String model
+int32 continue_time
+
+---
+# Result definition
+std_msgs/String msg
+
+---
+# Feedback definition
